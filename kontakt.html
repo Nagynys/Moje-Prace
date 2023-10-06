@@ -9,6 +9,8 @@
 
     <link rel="shorcut icon" href="obrazky/ico.jpg">
     <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
@@ -16,15 +18,22 @@
     <header>
         <div id="logo"><h1>Jakub<span>Kuba</span></h1>
         <small>Web Developer</small></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Domů</a></li>
-                <li><a href="omne.html">O mně</a></li>
-                <li><a href="dovednosti.html">Dovednosti</a></li>
-                <li><a href="projekty.html">Projekty</a></li>
-                <li><a class="kontakt-tlacitko" href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
+
+        <section class="mainHeader">
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <div class="fa fa-times" onclick="hideMenu()"></div>
+                    <ul>
+                        <li><a href="index.html">Domů</a></li>
+                        <li><a href="omne.html">O&nbsp;mně</a></li>
+                        <li><a href="dovednosti.html">Dovednosti</a></li>
+                        <li><a href="projekty.html">Projekty</a></li>
+                        <li><a class="kontakt-tlacitko" href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                    <div class="fa fa-bars" onclick="showMenu()"></div>
+            </nav>
+        </section>
     </header>
 
     <article>
@@ -55,5 +64,7 @@
     <footer>
         <p> &copy;Vytvořil: Jakub Šrámek 2023</p>
     </footer>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>

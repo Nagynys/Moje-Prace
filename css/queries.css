@@ -1,0 +1,34 @@
+@media(max-width: 830px) {
+
+    .nav-links ul li {
+        display: block;
+        padding-top: 20px;
+    }
+
+    .kontakt-tlacitko {
+        padding: 0;
+        background: none;
+        border-radius: 0;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #ee1717;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: white;
+        margin-top: 5px;
+        margin-left: 5px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}

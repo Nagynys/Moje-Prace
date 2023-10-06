@@ -139,31 +139,36 @@ body > header {
 
 
 /* Navigace záhlaví */
-nav ul {
-    margin: 0;
-    list-style: none;
+nav {
     display: flex;
-
-    align-items: center;
-    height: 100%;
+    padding-top: 40px;
 }
 
-nav ul li {
-    padding: 0 25px;
-    margin: 0 5px;
-    font-size: 1em;
-    line-height: 4.3em;
+.nav-links {
+    flex: 1;
+    text-align: right;
 }
 
-nav ul a {
+.nav-links ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 50px;
+    position: relative;
+}
+
+.nav-links ul li a {
     color: white;
-    padding: 8px 0;
     text-decoration: none;
-    text-transform: uppercase;
+    font-size: 16px;
+    
 }
 
-nav ul a:hover, .aktivni a {
+.nav-links a:hover, .aktivni a {
     border-bottom: 2px solid #EF6534;
+}
+
+nav .fa {
+    display: none;
 }
 
 
