@@ -18,76 +18,10 @@
 body {
     display: flex;
     flex-direction: column;
-    color: #414042;
-    background: lightgray;
-    font: 14px "Poppins";
+    background: rgb(208, 235, 85);
+    font: 17px "Poppins";
 
-    padding: 70px 0;
-
-}
-
-
-/* Článek */
-article {
-    padding: 60px 7px 0 7px;
-    margin: 0 auto;
-    max-width: 960px;
-
-}
-
-article h1,
-article h2,
-article h3,
-article h4,
-article h5,
-article h6 {
-    padding: 10px 0;
-    color: #0d4f88;
-}
-
-article h1 {
-    margin: 0;
-    font-size: 2.3em;
-    font-weight: bold;
-    text-transform: uppercase;
-    width: max-content;
-    border-bottom: 4px solid #EF6534;
-}
-
-article h2 {
-    font-size: 2em;
-}
-
-article header {
-    height: 80px;
-}
-
-article section p {
-    line-height: 1.8em;
-    margin-bottom: 1.5em;
-}
-
-article section a {
-    color: #ef6534;
-}
-
-
-/* Patička */
-footer {
-    height: 2.5rem;
-    color: white;
-    background: #414042;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-footer p {
-    display: flex;
-
-    justify-content: center;
-    padding: 10px 0;
+    padding: 70px 0 20px;
 }
 
 
@@ -95,7 +29,7 @@ footer p {
 body > header {
     height: 100px;
     width: 100%;
-    background: #003868;
+    background: #141414;
     color: white;
     display: flex;
     justify-content: space-around;
@@ -113,7 +47,7 @@ body > header {
     justify-content: center;
 
     background: url('obrazky/logo.png') no-repeat;
-    background-size: 40px 40px;
+    background-size: 40px;
 }
 
 #logo > * {
@@ -159,21 +93,20 @@ nav {
 .nav-links ul li a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
-    
+    font-size: 18px;  
 }
 
 .nav-links a:hover, .aktivni a {
-    border-bottom: 2px solid #EF6534;
+    border-bottom: 2px solid #e50914;
 }
 
 nav .fa {
     display: none;
 }
 
-
+/* Tlačítko v NAV */
 .kontakt-tlacitko {
-    background-color: #EF6534;
+    background-color: #e50914;
     padding: 10px 20px;
     border-radius: 20px;
 }
@@ -185,26 +118,64 @@ nav .fa {
 }
 
 
+/* Článek */
+article {
+    padding: 60px 7px 0;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    padding: 10px 0;
+    color: #061d5c;
+}
+
+article h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: max-content;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+article h2 {
+    font-size: 2em;
+    margin-top: 6px;
+}
+
+article section p {
+    line-height: 1.8em;
+    margin-bottom: 1.5em;
+}
+
+article section a {
+    color: #e50914;
+}
+
+
 /* Vizitka - Hlavní strana */
 .sectionVizitka {
     display: flex;
-
     justify-content: center;
     align-items: center;
 }
 
 .vizitka {
-    text-align: center;
-
-    border: 5px solid rgb(180, 174, 174);
-    border-radius: 15px;
-
-    background: #d3cf9d;
-    font-size: 2.5vw;
+    background: #b86110;
     color: black;
+    text-align: center;
+    font-size: 2.5vw;
     font-weight: 900;
 
-    padding: 5vw;
+    border-radius: 15px;
+    box-shadow: 0 0 20px black;
+    padding: 4.8vw;
 }
 
 .vizitka p {
@@ -212,10 +183,16 @@ nav .fa {
     padding: 20px;
 }
 
+.hlavniJmeno {
+    font-size: 60px;
+    color: black;
+}
 
-/* Projekt tlačítko - O mně */
-.projekt-tlacitko, .projekt-tlacitko2 {
-    background: #70B73A;
+
+/*Tlačítka: Vizitka a maPrace */
+.tlacitko-Vizitka,
+.tlacitko-maPrace {
+    background: #a70d15;
     color: white;
     font-size: 0.9em;
     text-transform: uppercase;
@@ -224,26 +201,35 @@ nav .fa {
     border-radius: 25px;
 }
 
-.projekt-tlacitko2 {
+.tlacitko-maPrace {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 20%;
+    font-size: 20px;
+    justify-content: center;
+}
+
+
+.tlacitko-Vizitka {
+    font-size: 20px;
     padding: 15px;
-}
-
-.hlavniJmeno {
-    font-size: 60px;
+    box-shadow: 0 0 20px black;
 }
 
 
-/* Avatar - O mně */
+/* O mně */
+.kontakt-o-mne {
+    color: #a70d15;
+    font-weight: 900;
+    text-decoration: none;
+}
+
 .avatar {
-    float: right;
+    display: flex;
+    margin: 0 auto;
     width: 300px;
-    -webkit-box-shadow: 4px 4px 10px 11px rgba(0,0,0,0.77); 
     box-shadow: 5px 5px 11px 11px rgba(0,0,0,0.77);
-    margin: 10px;
-}
-
-.cistic {
-    clear: both;
 }
 
 
@@ -258,6 +244,13 @@ nav .fa {
     padding: 10px;
     vertical-align: top;
     border: 1px solid gray;
+    border-radius: 10px;
+}
+
+#dovednosti img {
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    margin-top: 7px;
 }
 
 .centrovany {
@@ -268,43 +261,56 @@ nav .fa {
     text-align: center;
 }
 
-/* Responzivita tabulky*/
-@media (max-width: 768px) {
-    #dovednosti td {
-        width: 100%;
-    }
 
-    #dovednosti td h2, #dovednosti td p {
-        text-align: center;
-    }
-
-    #dovednosti td h2 {
-        font-size: 1.5em;
-    }
-
-    tr {
-        border-collapse: collapse;
-    }
-
-    #dovednosti td img {
-        max-width: 100%;
-        height: auto;
-    }
+/* API */
+.api {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    box-shadow: 0 0 20px rgb(209, 0, 0);
+    border-radius: 15px;
 }
 
+.api h3 {
+    font-size: 40px;
+    font-weight: 900;
+    color: green;
+}
+
+.api p {
+    font-size: 40px;
+}
+
+.api a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: blue;
+    
+
+    margin-bottom: 15px;
+}
 
 /* Projekty + kontakt*/
-.projektyObrazky img, .linkedin{
+.projektyObrazky img, 
+.linkedin {
     height: 5rem;
-    padding-right: 15px;
-    margin-top: 35px;
+    padding-right: 25px;
+}
+
+.projektyObrazky img {
+    margin: 45px auto;
 }
 
 
-/* Kontakt */
-.email {
-    float: right;
-    width: 300px;
-    padding-left: 100px;
-    filter: grayscale(1);
+/* Patička */
+.footer {
+    color: #e50914;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
 }
