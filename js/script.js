@@ -7,3 +7,9 @@ let navLinks = document.getElementById("navLinks")
     const hideMenu = () => {
         navLinks.style.right = "-250px"
     }
+    
+
+// Index
+if (window.location.pathname === '/index.html') {
+    window.location.replace('/')
+}
